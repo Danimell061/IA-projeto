@@ -3,7 +3,7 @@ import boto3
 from gtts import gTTS
 
 # ID
-ID_desejado = "66f468d6642b0eeae3c2efcf"  
+ID_desejado = "66f487d9ebdb9a0568e1cc0d"  
 
 api_url = "https://projeto-backend.fly.dev/noticias"
 response = requests.get(api_url)
@@ -26,7 +26,7 @@ if response.status_code == 200:
         conteudo = f"Notícia: {titulo}. Escrita por {autor}. Conteúdo do texto: {texto}"
 
         # Nome do arquivo MP3
-        arquivo_mp3 = f"noticia_{titulo_desejado}.mp3"
+        arquivo_mp3 = f"noticia_{ID_desejado}.mp3"
 
         # Converte o texto em áudio e salva como MP3
         tts = gTTS(text=conteudo, lang='pt', slow=False)
