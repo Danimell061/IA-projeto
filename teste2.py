@@ -3,7 +3,7 @@ import boto3
 from gtts import gTTS
 
 # ID
-ID_desejado = "66f487d9ebdb9a0568e1cc0d"  
+ID_desejado = "673fdd623daec7efa53aa673"  
 
 api_url = "https://projeto-backend.fly.dev/noticias"
 response = requests.get(api_url)
